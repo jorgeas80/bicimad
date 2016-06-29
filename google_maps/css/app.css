@@ -1,0 +1,81 @@
+body { margin: 0; padding: 0; }
+/* Header */
+.header {
+    position: absolute;
+    padding: 40px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: -moz-linear-gradient(top, rgba(245,245,243,1) 0%, rgba(245,245,243,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,245,243,1)), color-stop(100%,rgba(245,245,243,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(245,245,243,1) 0%,rgba(245,245,243,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(245,245,243,1) 0%,rgba(245,245,243,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(245,245,243,1) 0%,rgba(245,245,243,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(245,245,243,1) 0%,rgba(245,245,243,0) 100%); /* W3C */
+}
+
+    h1 { font-family: 'Arvo', Georgia, Times, serif; font-size: 40px; line-height: 40px; margin: 0; color: #48483A;}
+    h2 { font-family: 'PT Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 300; line-height:26px; width: 600px; margin-top: 12px; color: #74776B;  }
+
+    /* custom controls */
+    div.cartodb-zoom { position: absolute; top: 160px; left: 20px; }
+    div.cartodb-timeslider { left: 40px !important; bottom: 0 !important; }
+    /*div.cartodb-timeslider ul li.time { display: none; }*/
+    div.cartodb-legend-stack { right: 40px; }
+    div.cartodb-fullscreen { margin:145px 0px 0 40px; }
+
+
+.leaflet-top.leaflet-right { top: 40px; right: 20px; }
+.leaflet-top.leaflet-control { margin-top: 0; }
+.leaflet-right.leaflet-control { margin-right: 0; }
+
+/* legend */
+.info {
+    margin: 0px;
+    padding: 9px 20px 30px 20px;
+    color: #FFF;
+    background: #74776B;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B7C8B5;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    min-width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+    .info.leaflet-control { margin: 0; }
+    .info h4 { font-size: 15px; line-height: 20px; color: #FFF; margin: 0; }
+
+    .info table {
+        bottom: 30px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    .info span.length { position: absolute; bottom: 14px; right: 20px; text-transform: uppercase; font-size: 11px; color: #FFF; }
+    .info span.stations { position: absolute; bottom: 37px;  right: 20px; text-transform: uppercase; font-size: 11px; color: #B7C8B5; }
+
+
+
+/* Graph */
+.graph { margin: 40px 0 16px; }
+    .graph-figure {
+      font-size: 12px;
+      font-weight: 200;
+      position: absolute;
+      top: 40px;
+      color: #B7C8B5;
+      font-weight: bold;
+      text-align: center;
+    }
+    .graph-provider {
+      font-size: 12px;
+      position: absolute;
+      bottom: 15px;
+      color: #fff;
+      font-weight: regular;
+      text-align: center;
+    }
